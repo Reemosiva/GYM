@@ -1,0 +1,38 @@
+.about-page {
+  padding-top: 120px;
+  background-color: var(--color-bg-dark);
+}
+
+.about-img {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-content {
+  padding: var(--space-lg);
+}
+
+.about-content h2 {
+  margin-top: var(--space-lg);
+  color: var(--color-primary);
+}
+
+.stats-grid {
+  margin-top: var(--space-xl);
+}
+
+@media (max-width: 768px) {
+  .about-img {
+    margin-bottom: var(--space-lg);
+  }
+  
+  .about-content {
+    padding: var(--space-md) 0;
+  }
+}

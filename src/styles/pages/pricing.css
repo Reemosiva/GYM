@@ -1,0 +1,71 @@
+.pricing-page {
+  padding-top: 120px;
+  background-color: var(--color-bg-dark);
+}
+
+.pricing-card {
+  position: relative;
+  height: 100%;
+}
+
+.popular-badge {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  padding: calc(var(--space-xs) / 2) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+.pricing-title {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.pricing-price {
+  text-align: center;
+  margin: var(--space-md) 0;
+}
+
+.currency {
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.amount {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.period {
+  color: var(--color-text-muted);
+}
+
+.pricing-features {
+  margin: var(--space-lg) 0;
+}
+
+.pricing-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.pricing-feature i {
+  color: var(--color-primary);
+  margin-right: var(--space-sm);
+}
+
+.pricing-card.popular {
+  transform: scale(1.05);
+  border: 2px solid var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .pricing-card.popular {
+    transform: none;
+    margin: var(--space-md) 0;
+  }
+}

@@ -1,0 +1,31 @@
+.trainers-page {
+  padding-top: 120px;
+  background-color: var(--color-bg-dark);
+}
+
+.trainer-card {
+  height: 100%;
+}
+
+.trainer-img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.trainer-name {
+  margin-top: var(--space-sm);
+  color: var(--color-primary);
+}
+
+.trainer-position {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+  .trainer-img {
+    height: 250px;
+  }
+}

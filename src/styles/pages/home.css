@@ -1,0 +1,184 @@
+/* Home page specific styles */
+.services {
+  background-color: var(--color-bg-dark);
+}
+
+.services-grid {
+  margin-top: var(--space-xl);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.about-section {
+  background-color: var(--color-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center right/cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+}
+
+.about-img {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 100%;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.classes-section {
+  background-color: var(--color-bg-dark);
+}
+
+.classes-grid {
+  margin-top: var(--space-lg);
+}
+
+.class-time {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  padding: calc(var(--space-xs) / 2) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-xs);
+}
+
+.trainer-section {
+  background-color: var(--color-secondary);
+}
+
+.pricing-section {
+  background-color: var(--color-bg-dark);
+}
+
+.testimonial-section {
+  background-color: var(--color-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.pexels.com/photos/136405/pexels-photo-136405.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.testimonial-card {
+  position: relative;
+  padding: var(--space-lg);
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 6rem;
+  line-height: 1;
+  color: var(--color-primary);
+  opacity: 0.3;
+  font-family: serif;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: var(--space-md);
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: var(--space-sm);
+  object-fit: cover;
+}
+
+.testimonial-author-name {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.testimonial-author-title {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.cta-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+              url('https://images.pexels.com/photos/917653/pexels-photo-917653.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.stats-section {
+  background-color: var(--color-secondary);
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.stat-label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .about-img {
+    margin-bottom: var(--space-lg);
+  }
+  
+  .stat-item {
+    margin-bottom: var(--space-md);
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+  }
+}

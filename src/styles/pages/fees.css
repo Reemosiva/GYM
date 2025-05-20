@@ -1,0 +1,102 @@
+/* Container styles */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Heading */
+  .container h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Input field */
+  .container input[type="number"] {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Pay button */
+  .container button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background-color: #00bcd4;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* UPI options section */
+  .upi-options {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .upi-options p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* UPI app icons */
+  .upi-options div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .upi-options a {
+    transition: transform 0.2s ease;
+  }
+  
+  .upi-options a:hover {
+    transform: scale(1.05);
+  }
+  
+  .upi-options img {
+    width: 60px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    padding: 4px;
+    background-color: #f8f8f8;
+  }
+  
+  .upi-options img.selected {
+    border-color: #4caf50;
+  }
+  
+  /* Small screen adjustments */
+  @media (max-width: 500px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .upi-options div {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  
+    .upi-options img {
+      width: 80px;
+    }
+  }
+  

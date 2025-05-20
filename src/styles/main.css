@@ -1,0 +1,151 @@
+/* Import all styles */
+@import url('./variables.css');
+@import url('./reset.css');
+@import url('./layout.css');
+
+/* Component styles */
+@import url('./components/button.css');
+@import url('./components/card.css');
+@import url('./components/navbar.css');
+@import url('./components/hero.css');
+
+/* Page styles */
+@import url('./pages/home.css');
+@import url('./pages/about.css');
+@import url('./pages/classes.css');
+@import url('./pages/trainers.css');
+@import url('./pages/pricing.css');
+@import url('./pages/contact.css');
+
+/* Footer styles */
+.footer {
+  background-color: var(--color-secondary-dark);
+  padding: var(--space-xl) 0 var(--space-md);
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.footer-logo span {
+  color: var(--color-primary);
+}
+
+.footer-text {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-md);
+  position: relative;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer-link {
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+}
+
+.footer-hours {
+  margin-bottom: var(--space-sm);
+}
+
+.footer-day {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-muted);
+  margin-bottom: calc(var(--space-xs) / 2);
+}
+
+.footer-newsletter {
+  margin-top: var(--space-md);
+}
+
+.footer-form {
+  display: flex;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.footer-input {
+  flex: 1;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-secondary-light);
+  border: none;
+  color: var(--color-text-light);
+}
+
+.footer-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-secondary-light);
+  margin-top: var(--space-lg);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+.payment-section {
+  padding: 60px 20px;
+  background: #f4f4f4;
+}
+
+.payment-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.payment-form .form-group {
+  margin-bottom: 20px;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+}
